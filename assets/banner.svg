@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420" role="img" aria-labelledby="title desc">
+  <title id="title">EFI &amp; Boot Entry Cleaner</title>
+  <desc id="desc">Remove stale UEFI boot entries and the EFI folders they hide on the EFI System Partition.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#191a20"/>
+      <stop offset="0.55" stop-color="#131418"/>
+      <stop offset="1" stop-color="#0d0e12"/>
+    </linearGradient>
+    <linearGradient id="shield" x1="0.15" y1="0" x2="0.85" y2="1">
+      <stop offset="0" stop-color="#7fdcff"/>
+      <stop offset="0.5" stop-color="#3ea9e8"/>
+      <stop offset="1" stop-color="#1c6fa8"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#4cc2ff" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#4cc2ff" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-opacity="0.028" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1280" height="420" fill="url(#bg)"/>
+  <rect width="1280" height="420" fill="url(#grid)"/>
+
+  <circle cx="1090" cy="205" r="250" fill="url(#glow)"/>
+  <circle cx="1090" cy="205" r="148" fill="none" stroke="#4cc2ff" stroke-opacity="0.14"/>
+  <circle cx="1090" cy="205" r="186" fill="none" stroke="#4cc2ff" stroke-opacity="0.07"/>
+
+  <!-- badge -->
+  <rect x="76" y="62" width="272" height="30" rx="15" fill="#20222b" stroke="#333642"/>
+  <circle cx="94" cy="77" r="4" fill="#38d39f"/>
+  <text x="106" y="81" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11" font-weight="600" letter-spacing="1.4" fill="#a9b1c0">OPEN SOURCE · WINDOWS 11</text>
+
+  <text x="76" y="168" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="54" font-weight="700" fill="#f5f7fb">EFI &amp; Boot Entry Cleaner</text>
+
+  <text x="76" y="211" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="20" fill="#a3abba">Remove stale UEFI boot entries — and the leftover EFI folders</text>
+  <text x="76" y="239" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="20" fill="#a3abba">they hide on the EFI System Partition.</text>
+
+  <!-- feature chips -->
+  <g font-family="Segoe UI, Inter, Arial, sans-serif" font-size="13" font-weight="600">
+    <rect x="76" y="286" width="176" height="38" rx="9" fill="#1d2027" stroke="#30343f"/>
+    <circle cx="96" cy="305" r="3.5" fill="#38d39f"/>
+    <text x="108" y="310" fill="#d6dbe4">One-click cleanup</text>
+
+    <rect x="264" y="286" width="176" height="38" rx="9" fill="#1d2027" stroke="#30343f"/>
+    <circle cx="284" cy="305" r="3.5" fill="#4cc2ff"/>
+    <text x="296" y="310" fill="#d6dbe4">Automatic backup</text>
+
+    <rect x="452" y="286" width="140" height="38" rx="9" fill="#1d2027" stroke="#30343f"/>
+    <circle cx="472" cy="305" r="3.5" fill="#f5a524"/>
+    <text x="484" y="310" fill="#d6dbe4">Dry-run mode</text>
+
+    <rect x="604" y="286" width="232" height="38" rx="9" fill="#1d2027" stroke="#30343f"/>
+    <circle cx="624" cy="305" r="3.5" fill="#9aa2b1"/>
+    <text x="636" y="310" fill="#d6dbe4">Hard-locked system entries</text>
+  </g>
+
+  <text x="76" y="376" font-family="Cascadia Mono, Consolas, monospace" font-size="12" fill="#5d6472">github.com/souradeepdutta/efi-boot-entry-cleaner</text>
+
+  <!-- shield mark -->
+  <g transform="translate(968, 82) scale(0.94)">
+    <path d="M128 22 C158 37 180 42 202 44 L202 118 C202 164 170 196 128 214 C86 196 54 164 54 118 L54 44 C76 42 98 37 128 22 Z"
+          fill="url(#shield)" stroke="#bfeaff" stroke-opacity="0.45" stroke-width="2.5"/>
+    <path d="M84 128 L116 161 L176 97" fill="none" stroke="#0d2233" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M74 60 C94 68 110 70 128 72" fill="none" stroke="#ffffff" stroke-opacity="0.35" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="197" cy="197" r="18" fill="#38d39f" stroke="#0f1116" stroke-width="5"/>
+  </g>
+</svg>

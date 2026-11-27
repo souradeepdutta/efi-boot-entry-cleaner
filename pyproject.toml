@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "efi-boot-entry-cleaner"
+version = "1.0.0"
+description = "Windows 11 GUI to safely remove stale UEFI boot entries and their leftover EFI System Partition folders."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Souradeep Dutta" }]
+keywords = ["uefi", "efi", "bcdedit", "boot-manager", "dual-boot", "windows", "pyside6"]
+dependencies = ["PySide6>=6.6,<7"]
+
+[project.urls]
+Homepage = "https://github.com/souradeepdutta/efi-boot-entry-cleaner"
+Issues = "https://github.com/souradeepdutta/efi-boot-entry-cleaner/issues"
+Releases = "https://github.com/souradeepdutta/efi-boot-entry-cleaner/releases"
+
+[tool.setuptools]
+py-modules = ["main"]
+packages = ["core", "ui"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+filterwarnings = ["error::DeprecationWarning:core.*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = [".venv", "build", "dist"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "SIM", "RUF"]
+ignore = ["E501", "B008"]
